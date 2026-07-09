@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #e74c3c; color: white; border-radius: 5px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>✅ Welcome, {{ username }}!</h2>
+        <p>You are securely logged in.</p>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
