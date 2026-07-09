@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set up 2FA</title>
+    <style>
+        body { font-family: Arial; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; width: 320px; }
+        img { margin: 15px 0; }
+        a.button { display: inline-block; padding: 10px 20px; background: #2c3e50; color: white; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>📱 Set up 2FA</h2>
+        <p>Scan this QR code with Google Authenticator:</p>
+        <img src="data:image/png;base64,{{ qr_code }}" width="200">
+        <p>Account: <strong>{{ username }}</strong></p>
+        <a class="button" href="/login">I've scanned it — Go to Login</a>
+    </div>
+</body>
+</html>
